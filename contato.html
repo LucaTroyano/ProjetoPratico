@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Projeto Web Design</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+        <meta name="keywords" content="palavras-chaves">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><h2>Meu Projeto</h2></a></div>
+                <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                
+                    <li class="selected">
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                </nav>
+                <nav class="menu-mobile">
+                    <h2><i class="fa-solid fa-bars"></i></h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                
+                        <li class="selected">
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+
+        </header>
+       <section style="background-image: url(imagens/suica.png);" class="title-page">
+            <div class="overlay__title-page"></div>
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus elit leo, suscipit pretium ex finibus a. Donec commodo, urna quis ullamcorper tincidunt, nisi leo facilisis ex, ut tempus purus massa sed neque.</p>
+            </div>
+        </section>
+        <section class="contato">
+            <div class="container">
+                <div class="w60 formulario">
+                    <h2>Entre em contato conosco!</h2>
+                    <form method="post">
+                        <div class="w50">
+                            <input placeholder="Nome" type="text">
+                        </div>
+                        <div class="w50">
+                            <input placeholder="Sobrenome" type="text">
+                        </div>
+                         <div class="w100">
+                            <input placeholder="E-mail" type="email">
+                        </div>
+                        <div class="w100">
+                            <textarea placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="w40 tags-form">
+                    <h2><i class="fa-solid fa-comment"></i> Fale com a nossa equipe!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut consequat nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus bibendum at felis ut semper. Etiam lobortis enim id augue scelerisque, et commodo erat faucibus. Suspendisse velit diam, pulvinar quis pellentesque sed, placerat id turpis.</p>
+                    <p class="tag-contato"><i class="fa-brands fa-instagram"></i>@luca.troyano</p>
+                    <p class="tag-contato"><i class="fa-brands fa-linkedin"></i>/luca-troyano</p>
+                </div>
+                <div class=clear></div>
+            </div>
+        </section>
+        <footer class="footer1">
+            <div class="container">
+                <div class="w33">
+                    <h2>Entre em contato:</h2>
+                    <h3>Localização: </h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Rua Paranaguá 9999</p>
+                    <h3>Telefone: </h3> 
+                    <p><i class="fa-solid fa-phone"></i>+55 11 999999999</p>
+                </div>
+                <div class="w33">
+                    <h2>Links Úteis</h2>
+                    <a href="">Site da empresa</a>
+                </div>
+                <div class="w33">
+                    <h2>Conecte-se</h2>
+                    <div class="group-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+        <footer class="footer2">
+                <p>Todos os direitos reservados</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script>
+            $('nav.menu-mobile h2').click(function() {
+                $('nav.menu-mobile ul').slideToggle();
+            });
+        </script>
+    </body>
+</html>
